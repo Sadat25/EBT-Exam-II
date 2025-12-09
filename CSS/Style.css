@@ -1,0 +1,219 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-a {
+    transition: color 0.3s linear;
+    font-weight: 600;
+}
+
+.nav-a:hover {
+    color: #ff1e1e !important;
+}
+
+.form-control {
+    border-color: #ff1e1e !important;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.form-control:focus {
+    border-color: #ff1e1e !important;
+    box-shadow: 0 0 5px #ff1e1e50 !important;
+}
+
+.btn-outline-success {
+    border-color: #ff1e1e;
+    color: #ff1e1e;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    transition: color 0.3s ease-out;
+}
+
+.btn-outline-success a {
+    text-decoration: none;
+    color: #ff1e1e;
+    transition: color 0.3s ease;
+    transition: color 0.3s ease-in;
+}
+
+.btn-outline-success:hover {
+    background-color: #ff1e1e;
+    border-color: #ff1e1e;
+}
+
+.btn-outline-success:hover a {
+    color: white;
+}
+
+.carousel-item {
+    height: 900px !important;
+}
+
+footer a:hover {
+    color: #ff1e1e !important;
+}
+
+#demo {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: aquamarine;
+    margin-bottom: 5px;
+}
+
+
+.counter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: aquamarine;
+    padding: 20px 0;
+    margin-bottom: 5px;
+}
+
+.counter-title {
+    font-size: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.counter-value {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+/* 8. food item */
+
+ul.food-list {
+    list-style: none;
+    padding: 0;
+    max-width: 340px;
+    margin: 70px auto;
+    font-family: "Segoe UI", sans-serif;
+}
+
+ul.food-list li {
+    position: relative;
+    background-color: #fff7ed;
+    margin: 14px 0;
+    padding: 18px 22px 18px 50px;
+    border: 1.5px solid #fed7aa;
+    border-radius: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    color: #7c2d12;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
+    opacity: 0;
+    animation: softEntry 0.6s ease forwards;
+}
+
+ul.food-list li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+ul.food-list li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+ul.food-list li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+ul.food-list li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+ul.food-list li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+ul.food-list li::before {
+    content: "🍽️";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    animation: spinSlow 4s linear infinite;
+}
+
+ul.food-list li::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0;
+    background: linear-gradient(to right,
+            rgba(255, 211, 145, 0.45),
+            rgba(253, 186, 116, 0.45));
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+
+ul.food-list li:hover {
+    background-color: #ffedd5;
+    transform: translateY(-4px) rotate(1.2deg);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+ul.food-list li:hover::after {
+    width: 100%;
+}
+
+@keyframes softEntry {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes spinSlow {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+/*  Contact Section Styles */
+
+.contact-section {
+    background: #f8f9fa;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+.contact-section button {
+    border-radius: 6px;
+}
