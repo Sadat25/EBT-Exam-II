@@ -15,7 +15,7 @@ function showAlert() {
 
 let finalValue = 5000;
 let startValue = 0;
-let duration = 2500;
+let duration = 5000;
 let stepTime = Math.abs(Math.floor(duration / finalValue));
 
 function upValue() {
