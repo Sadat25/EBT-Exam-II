@@ -6,20 +6,20 @@ document.getElementById("demo").innerHTML = text;
 
 // code for popup
 
-function showAlert() {
+function showAlert() {      
     alert("Message Sent Successfully!");
 }
 
 
-// counter
+// counter   
 
 let finalValue = 5000;
-let startValue = 0;
+let startValue = 0;       
 let duration = 5000;
 let stepTime = Math.abs(Math.floor(duration / finalValue));
-
+       
 function upValue() {
-    if (startValue <= finalValue) {
+    if (startValue <= finalValue) {             
         document.getElementById("number_up").innerText = startValue;
         startValue++;
         setTimeout(upValue, stepTime);
