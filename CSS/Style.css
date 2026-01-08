@@ -4,26 +4,26 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;               
 }
 
-.nav-a {
+.nav-a {                  
     transition: color 0.3s linear;
     font-weight: 600;
 }
 
 .nav-a:hover {
     color: #ff1e1e !important;
-}
-
+}              
+                   
 .form-control {
     border-color: #ff1e1e !important;
     transition: all 0.3s ease;
     padding: 10px 20px;
-}
+}                
 
 .form-control:focus {
-    border-color: #ff1e1e !important;
+    border-color: #ff1e1e !important;             
     box-shadow: 0 0 5px #ff1e1e50 !important;
 }
 
